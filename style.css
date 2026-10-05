@@ -1,0 +1,50 @@
+/* Centraliza a calculadora na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdd3d381;
+    font-family: Arial, sans-serif;
+}
+
+*/ Corpo da calculadora */
+.calculadora {
+    background-color: #f39f9f;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: 0, 0, 0, 5;
+}
+
+#visor {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #c4858571;
+}
+
+button:active {
+    transform: translate(1px);
+}
